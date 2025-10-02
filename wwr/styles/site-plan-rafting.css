@@ -13,11 +13,11 @@
   --paragraph-font: 'Lato', sans-serif;
 
   /* Text colors */
-  --headline-color-on-white: #FF4A1C;
-  --headline-color-on-color:  #50514F;
-  --paragraph-color-on-white: #50514F;
+  --headline-color-on-white: #50514F;
+  --headline-color-on-color:   #FFC145;
+  --paragraph-color-on-white: #A1CCA5;
   --paragraph-color-on-color: white;
-  --paragraph-background-color: #FF4A1C;
+  --paragraph-background-color: #A1CCA5;
 
   /* Navigation */
   --nav-link-color: #A1CCA5;
@@ -65,7 +65,7 @@ header {
 }
 
 header > h1, header > h2 {
-  color: var(--headline-color-on-white);
+  color: var(--headline-color-on-color);
 }
 
 p {
