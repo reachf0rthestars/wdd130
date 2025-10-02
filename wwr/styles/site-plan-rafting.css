@@ -13,9 +13,9 @@
   --paragraph-font: 'Lato', sans-serif;
 
   /* Text colors */
-  --headline-color-on-white: #50514F;
+  --headline-color-on-white: white;
   --headline-color-on-color:  #A1CCA5;
-  --paragraph-color-on-white: #A1CCA5;
+  --paragraph-color-on-white: #50514F;
   --paragraph-color-on-color: white;
   --paragraph-background-color: #A1CCA5;
 
