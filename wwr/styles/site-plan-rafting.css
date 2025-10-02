@@ -14,7 +14,7 @@
 
   /* Text colors */
   --headline-color-on-white: #396E32;
-  --headline-color-on-color: green;
+  --headline-color-on-color:  #787b6b;
   --paragraph-color-on-white: #396E32;
   --paragraph-color-on-color: white;
   --paragraph-background-color: #396E32;
@@ -22,7 +22,7 @@
   /* Navigation */
   --nav-link-color: #787b6b;
   --nav-background-color: #36d350;
-  --nav-hover-link-color: green;
+  --nav-hover-link-color: white;
   --nav-hover-background-color: #396E32;
 }
 
