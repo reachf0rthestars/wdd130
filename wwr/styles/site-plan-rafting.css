@@ -3,27 +3,27 @@
 
 :root {
   /* Color palette */
-  --primary-color: #396E32;
-  --secondary-color: #787b6b;
-  --accent1-color: #36d350;
-  --accent2-color: green;
+  --primary-color: #50514F;
+  --secondary-color: #A1CCA5;
+  --accent1-color: #FF4A1C;
+  --accent2-color: #FFC145;
 
   /* Font families */
   --heading-font: 'IM Fell French Canon', serif;
   --paragraph-font: 'Lato', sans-serif;
 
   /* Text colors */
-  --headline-color-on-white: #396E32;
-  --headline-color-on-color:  #787b6b;
-  --paragraph-color-on-white: #396E32;
+  --headline-color-on-white: #50514F;
+  --headline-color-on-color:  #A1CCA5;
+  --paragraph-color-on-white: #A1CCA5;
   --paragraph-color-on-color: white;
-  --paragraph-background-color: #396E32;
+  --paragraph-background-color: #A1CCA5;
 
   /* Navigation */
-  --nav-link-color: #787b6b;
-  --nav-background-color: #36d350;
+  --nav-link-color: #A1CCA5;
+  --nav-background-color: #FF4A1C;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E32;
+  --nav-hover-background-color: #50514F;
 }
 
 /* General styles */
