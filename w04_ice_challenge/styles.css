@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #add8e6; /* Light blue */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.poster {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.title {
+    font-size: 48px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: black;
+}
+
+.quote {
+    font-size: 18px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.principles {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.principles li {
+    margin: 10px 0;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.quote-secondary {
+    font-size: 16px;
+    margin: 20px 0;
+    color: white;
+    background-color: #4682b4; /* Steel blue */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.attribution {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
