@@ -83,7 +83,6 @@ footer a:hover {
 .icon {
   width: 20px;
   height: 20px;
-  object-fit: contain;
   margin: 0 10px;
   vertical-align: middle;
 }
