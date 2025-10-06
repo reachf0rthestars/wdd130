@@ -1,4 +1,4 @@
-/* Global Typography & Colors */
+/* Typography & Base Colors */
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +18,20 @@ h1, h2 {
   color: #50514F;
 }
 
-/* Navigation Header */
+/* Content Container */
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Background Div */
+#background {
+  height: 725px;
+  background-color: #A1CCA5;
+}
+
+/* Navigation */
 .main-nav {
   background-color: #50514F;
   padding: 10px 0;
@@ -37,38 +50,28 @@ h1, h2 {
   color: #FFC145;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Lato', sans-serif;
 }
 
 .main-nav a:hover {
-  text-decoration: underline;
+  background-color: #A1CCA5;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-/* Header Section */
+/* Header */
 header {
   background-color: #A1CCA5;
   padding: 40px 20px;
   border-bottom: 4px solid #FF4A1C;
 }
 
-.title {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 20px;
-  margin-top: 0;
-}
-
 /* Gallery Cards */
 .gallery-card {
   padding: 30px;
   max-width: 600px;
-  margin: auto;
+  margin: 40px auto;
   background-color: #A1CCA5;
   border-radius: 10px;
-  margin-bottom: 30px;
 }
 
 .gallery-img {
@@ -80,11 +83,15 @@ header {
   margin: 20px auto;
 }
 
+.mountains {
+  width: 300px;
+  height: 200px;
+}
+
 /* Join Us Section */
 .join-us {
   background-color: #A1CCA5;
   padding: 40px 20px;
-  text-align: center;
 }
 
 .join-us h2 {
@@ -145,8 +152,8 @@ footer a:hover {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   vertical-align: middle;
   transition: transform 0.2s ease;
