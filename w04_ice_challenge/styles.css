@@ -79,10 +79,14 @@ footer a:hover {
   margin: 0 10px;
 }
 
-
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   margin: 0 10px;
   vertical-align: middle;
+}
+.social-icons img.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
