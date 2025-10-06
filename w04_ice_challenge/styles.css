@@ -4,8 +4,8 @@ body {
   padding: 0;
   background-color: #F8E9E9;
   font-family: 'Lato', sans-serif;
-  text-align: center;
   color: #50514F;
+  text-align: center;
 }
 
 h1, h2 {
@@ -16,6 +16,31 @@ h1, h2 {
 .subtitle {
   font-size: 18px;
   color: #50514F;
+}
+
+/* Navigation Header */
+.main-nav {
+  background-color: #50514F;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #FFC145;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
 }
 
 /* Layout */
@@ -45,6 +70,38 @@ h1, h2 {
   border-radius: 8px;
   display: block;
   margin: 20px auto;
+}
+
+/* Join Us Section */
+.join-us {
+  background-color: #A1CCA5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.join-us h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #FF4A1C;
+}
+
+.join-us p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #FF4A1C;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #FFC145;
+  color: #50514F;
 }
 
 /* Footer */
@@ -83,10 +140,10 @@ footer a:hover {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  margin: 0 10px;
   vertical-align: middle;
-}
-.social-icons img.icon:hover {
-  transform: scale(1.1);
   transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
