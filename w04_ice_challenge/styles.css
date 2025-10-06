@@ -1,11 +1,24 @@
+/* Typography */
 body {
   margin: 0;
   padding: 0;
-  background-color: #add8e6; /* Light blue */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F8E9E9;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  color: #50514F;
 }
 
+h1, h2 {
+  font-family: 'IM Fell French Canon', serif;
+  color: #FF4A1C;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #50514F;
+}
+
+/* Layout */
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -15,57 +28,35 @@ body {
   height: 725px;
 }
 
+/* Gallery Cards */
 .gallery-card {
   padding: 30px;
   max-width: 600px;
   margin: auto;
+  background-color: #A1CCA5;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-.title {
-  font-size: 48px;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.title:hover {
-  color: black;
-}
-
-h2, p, section, button {
-  text-align: center;
-}
-
-img {
+.gallery-img {
   width: 300px;
-  height: auto;
-  margin: 20px 0;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
-}
-
-.mountains {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-.logo, .icon {
-  width: 80px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
+/* Footer */
 footer {
-  background-color: #2c3e50; /* Deep navy */
+  background-color: #50514F;
   color: #ffffff;
   padding: 20px 0;
-  text-align: center;
   font-size: 14px;
 }
 
 footer a {
-  color: #ffffff;
+  color: #FFC145;
   text-decoration: none;
   margin: 0 8px;
 }
@@ -78,6 +69,8 @@ footer a:hover {
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* Social Icons */
 .social-icons {
   margin-top: 10px;
 }
@@ -86,13 +79,9 @@ footer a:hover {
   margin: 0 10px;
 }
 
-.social-icons img.icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
 .icon {
-  width: 20px;
-  height: auto;
-  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
 }
