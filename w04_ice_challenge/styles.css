@@ -1,62 +1,64 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #add8e6; /* Light blue */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6; /* Light blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-.poster {
-    padding: 30px;
-    max-width: 600px;
-    margin: auto;
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#background {
+  height: 725px;
+}
+
+.gallery-card {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .title {
-    font-size: 48px;
-    color: white;
-    transition: color 0.3s ease;
+  font-size: 48px;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .title:hover {
-    color: black;
+  color: black;
 }
 
-.quote {
-    font-size: 18px;
-    margin: 20px 0;
-    font-style: italic;
-}
-
-.principles {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-    font-size: 18px;
-}
-
-.principles li {
-    margin: 10px 0;
+h2, p, section, button {
+  text-align: center;
 }
 
 img {
-    width: 300px;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px;
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
-.quote-secondary {
-    font-size: 16px;
-    margin: 20px 0;
-    color: white;
-    background-color: #4682b4; /* Steel blue */
-    padding: 15px;
-    border-radius: 5px;
+.mountains {
+  display: block;
+  margin: 0 auto;
 }
 
-.attribution {
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: bold;
+.logo, .icon {
+  width: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  background-color: #4682b4;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
 }
