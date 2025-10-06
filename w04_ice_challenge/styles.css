@@ -91,3 +91,8 @@ footer a:hover {
   height: 20px;
   vertical-align: middle;
 }
+.icon {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
