@@ -139,11 +139,31 @@ footer a:hover {
 .icon {
   width: 40px;
   height: 40px;
-  object-fit: contain;
+  object-fit: fill;
+  margin: 0 10px;
   vertical-align: middle;
-  transition: transform 0.2s ease;
 }
 
 .icon:hover {
   transform: scale(1.1);
+}
+header {
+  background-color: #A1CCA5;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #FF4A1C;
+}
+
+header .title {
+  font-family: 'IM Fell French Canon', serif;
+  font-size: 48px;
+  color: #FF4A1C;
+  margin-bottom: 10px;
+}
+
+header .subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #50514F;
+  margin-top: 0;
 }
