@@ -2,78 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Go For It Rafting</title>
+  <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="background"></div>
   <div id="content">
-    <!-- Navigation -->
-    <nav class="main-nav">
-      <a href="index.html" class="logo-link">
-        <img src="images/oar.png" alt="Dry Oar Logo" class="logo" />
+    <!-- Header and Navigation -->
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Dry Oar Logo" />
       </a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="site-map.html">Site Map</a></li>
-      </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-      <img src="images/raft2.jpg" alt="Rafting adventure" class="hero-img" />
-      <h1 class="home-title">Have An Adventure</h1>
-      <p class="tagline">Rafting - Camping - Hiking - Fun</p>
-      <a href="contact.html" class="cta-button">Book Your Adventure Today</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Page 2</a>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
     </header>
 
-    <!-- Activity Sections -->
-    <main>
-      <section class="activity-card">
-        <h2>River</h2>
-        <img src="images/rivers.jpg" alt="River scene" class="card-img" />
+    <!-- Hero Section -->
+    <div id="hero">
+      <div id="hero-box">
+        <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting" />
+      </div>
+      <section id="hero-msg">
+        <h1 class="home-title">Have An Adventure</h1>
+        <h4>Make Memories with Dry Oar</h4>
+        <div class="button-box">
+          <a class="book" href="contactus.html">Book Now</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main class="home-grid">
+      <section class="rivers-card">
+        <img class="card-img" src="images/rivers.jpg" alt="River in forest" />
+        <img class="icon" src="images/river_icon.png" alt="River icon" />
+        <h2>Rivers</h2>
       </section>
 
-      <section class="activity-card">
+      <section class="camping-card">
+        <img class="card-img" src="images/camping.jpg" alt="Tent in mountains" />
+        <img class="icon" src="images/fire_icon.png" alt="Fire icon" />
         <h2>Camping</h2>
-        <img src="images/camping.jpg" alt="Camping scene" class="card-img" />
       </section>
 
-      <section class="activity-card">
+      <section class="rapids-card">
+        <img class="card-img" src="images/rapids.jpg" alt="Rafting boat" />
+        <img class="icon" src="images/oars.png" alt="Oars icon" />
         <h2>Rapids</h2>
-        <img src="images/raft2.jpg" alt="Rafting rapids" class="card-img" />
       </section>
 
-      <!-- Wireframe Section -->
-      <section class="wireframes">
-        <h2>Wireframes</h2>
-        <div class="wireframe-box">
-          <h3>Home Page Wireframe</h3>
-          <img src="images/home-wireframe.png" alt="Home wireframe" />
-        </div>
-        <div class="wireframe-box">
-          <h3>About Us Page</h3>
-          <img src="images/about-wireframe.png" alt="About wireframe" />
-        </div>
+      <!-- Scenic Message Section -->
+      <img class="mountains" src="images/mountains.jpg" alt="Misty mountains" />
+      <section class="msg">
+        <h2>More Than Just The Thrill</h2>
+        <p>
+          Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.
+        </p>
+        <a class="join" href="rivers.html">Join Us</a>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <img src="images/mountains.jpg" alt="Mountain trail" class="footer-img" />
-      <p class="footer-quote">
-        Know Then Ask The Trail.<br />
-        The trail is a place of discovery. It reveals the beauty of nature and the strength within.<br />
-        Ask the trail and it will answer.
-      </p>
+      <p>Dry Oar &copy; 2025 - Addison Anglin</p>
+      <p><a href="site-plan-rafting.html">Site Plan</a></p>
+      <p><a href="contactus.html">Contact Us</a></p>
       <div class="social">
-        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook icon" class="icon" /></a>
-        <a href="https://twitter.com" target="_blank"><img src="images/twitter.jpg" alt="Twitter icon" class="icon" /></a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram icon" />
+        </a>
       </div>
-      <p class="footer-note">© 2023 Go For It Rafting. Every Path and Each Rapid Counts.</p>
     </footer>
   </div>
 </body>
