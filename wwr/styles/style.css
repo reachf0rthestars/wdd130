@@ -151,3 +151,35 @@ footer {
   height: auto;
   padding-top: 15px;
 }
+/* Navigation Header */
+.main-nav {
+  background-color: #50514F; /* Primary color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f8e9e9; /* Light background text */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+  color: #FFC145; /* Accent 2 */
+}
