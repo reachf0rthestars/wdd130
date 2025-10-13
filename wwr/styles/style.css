@@ -20,12 +20,6 @@ h1, h2, h3, h4 {
   padding: 20px;
 }
 
-/* Background Div */
-#background {
-  height: 725px;
-  background-color: #A1CCA5;
-}
-
 /* Header and Navigation */
 header {
   background-color: #50514F;
