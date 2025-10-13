@@ -51,33 +51,31 @@ nav a:hover {
 }
 
 /* Hero Section */
-#hero {
-  position: relative;
-  margin-top: 0;
-}
-
-#hero-box {
+ #hero {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #hero-img {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 #hero-msg {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
+  background-color: #A1CCA5;
+  padding: 40px;
+  margin-top: 0;
   border-radius: 10px;
 }
 
 .home-title {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color: #FF4A1C;
 }
 
 .button-box {
@@ -87,8 +85,8 @@ nav a:hover {
 .book {
   font-size: 18px;
   padding: 15px 30px;
-  background-color: #A1CCA5;
-  color: #50514F;
+  background-color: #FF4A1C;
+  color: #f8e9e9;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -96,7 +94,9 @@ nav a:hover {
 
 .book:hover {
   background-color: #FFC145;
+  color: #50514F;
 }
+
 
 /* Main Grid */
 .home-grid {
