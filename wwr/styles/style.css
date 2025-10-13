@@ -118,8 +118,7 @@ nav a:hover {
   margin-top: 15px;
 }
 
-/* Section Break */
-.section-break {
+#background {
   height: 725px;
   background-color: #A1CCA5;
   margin-top: 60px;
