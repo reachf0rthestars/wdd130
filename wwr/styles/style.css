@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 /* Navigation */
 .main-nav {
-  background-color: #50514F;
+  background-color: #50514F; /* Primary color */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,14 +42,15 @@ nav ul {
 }
 
 nav a {
-  color: #f8e9e9;
+  color: #FF4A1C; /* Accent 1: bold orange */
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
-  color: #FFC145;
+  color: #FFC145; /* Accent 2: warm yellow */
 }
 
 /* Hero Section */
@@ -72,7 +73,7 @@ nav a:hover {
   display: inline-block;
   margin-top: 20px;
   padding: 15px 30px;
-  background-color: #A1CCA5;
+  background-color: #A1CCA5; /* Secondary */
   color: #50514F;
   font-weight: bold;
   border-radius: 5px;
@@ -150,36 +151,4 @@ footer {
   width: 40px;
   height: auto;
   padding-top: 15px;
-}
-/* Navigation Header */
-.main-nav {
-  background-color: #50514F; /* Primary color */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-}
-
-.logo {
-  width: 80px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #f8e9e9; /* Light background text */
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
-}
-
-nav a:hover {
-  color: #FFC145; /* Accent 2 */
 }
