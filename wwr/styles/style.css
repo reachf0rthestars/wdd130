@@ -1,7 +1,11 @@
-/* Base Reset and Typography */
-body {
+/* Global Reset and Typography */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-size: 22px;
   font-family: 'Lato', sans-serif;
   background-color: #f8e9e9;
@@ -14,6 +18,7 @@ h1, h2, h3, h4 {
   color: #FF4A1C;
 }
 
+/* Page Container */
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -43,7 +48,6 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
@@ -51,31 +55,27 @@ nav a:hover {
 }
 
 /* Hero Section */
- #hero {
+#hero {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 #hero-img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0;
-  padding: 0;
 }
 
+/* Adventure Message Section */
 #hero-msg {
   background-color: #A1CCA5;
   padding: 40px;
-  margin-top: 0;
   border-radius: 10px;
+  margin-top: 0;
 }
 
 .home-title {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #FF4A1C;
 }
 
 .button-box {
@@ -97,8 +97,7 @@ nav a:hover {
   color: #50514F;
 }
 
-
-/* Main Grid */
+/* Main Grid Layout */
 .home-grid {
   display: flex;
   flex-direction: column;
@@ -112,7 +111,6 @@ nav a:hover {
   width: 100%;
   border: 10px solid #A1CCA5;
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
 .icon {
@@ -132,7 +130,6 @@ nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-top: 0;
 }
 
 .msg {
@@ -196,19 +193,4 @@ footer a:hover {
 .social img {
   width: 80px;
   height: auto;
-}
-#hero-box {
-  margin: 0;
-  padding: 0;
-}
-
-#hero-img {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-#hero-msg {
-  margin-top: 0;
-  padding-top: 0;
 }
