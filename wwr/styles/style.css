@@ -7,14 +7,13 @@
 
 body {
   font-size: 22px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   background-color: #f8e9e9;
   color: #50514F;
-  text-align: center;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Georgia', serif;
   color: #FF4A1C;
 }
 
@@ -70,16 +69,17 @@ nav a:hover {
   background-color: #A1CCA5;
   padding: 40px;
   border-radius: 10px;
-  margin-top: 0;
 }
 
 .home-title {
   font-size: 2.5em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .button-box {
   margin-top: 20px;
+  text-align: center;
 }
 
 .book {
@@ -90,6 +90,7 @@ nav a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .book:hover {
@@ -99,10 +100,11 @@ nav a:hover {
 
 /* Main Grid Layout */
 .home-grid {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 80px auto;
   padding: 0 20px;
 }
 
@@ -135,7 +137,7 @@ nav a:hover {
   background-color: #A1CCA5;
   padding: 40px;
   border-radius: 10px;
-  margin: 40px auto;
+  margin: 40px 0;
   max-width: 800px;
 }
 
@@ -157,6 +159,7 @@ nav a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .join:hover {
@@ -169,13 +172,14 @@ footer {
   background-color: #50514F;
   color: #f8e9e9;
   padding: 40px 20px;
-  margin-top: 100px;
+  margin: 100px 0 0 0;
 }
 
 footer a {
   color: #FFC145;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 footer a:hover {
