@@ -22,6 +22,7 @@
   width: 100px;
   height: 100px;
 }
+
 /* Activity 1 layout */
 .content1 {
   display: grid;
@@ -36,4 +37,135 @@
 
 .green1, .yellow1 {
   height: 200px;
+}
+
+/* Activity 2 layout */
+.content2 {
+  position: relative;
+  height: 200px;
+}
+
+.red2, .green2, .yellow2, .blue2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.red2 {
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.green2 {
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.yellow2 {
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.blue2 {
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+
+/* Activity 3 layout */
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.red3 {
+  grid-column: span 2;
+}
+
+.green3 {
+  grid-column: 1;
+}
+
+.yellow3 {
+  grid-column: 2;
+}
+
+.blue3 {
+  grid-column: span 2;
+}
+
+/* Activity 4 layout */
+.content4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+  gap: 10px;
+}
+
+.red4 {
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+.green4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.yellow4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.blue4 {
+  grid-column: span 2;
+  grid-row: 3;
+}
+
+/* Activity 5 layout */
+.green5 {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.yellow5 {
+  overflow: hidden;
+}
+
+/* Activity 6 layout */
+.content6 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  position: relative;
+}
+
+.red6 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.green6 {
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 2;
+}
+
+.yellow6 {
+  grid-column: 3;
+  grid-row: 3;
+  z-index: 3;
+}
+
+.blue6 {
+  grid-column: 2;
+  grid-row: 3;
+  z-index: 4;
 }
