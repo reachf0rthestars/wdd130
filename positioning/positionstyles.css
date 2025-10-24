@@ -204,9 +204,11 @@
   width: 100%;
   height: 100px;
 }
-
 .red5 {
   background-color: red;
+  width: 100%;
+  height: 100px;
+  clear: both; /* ensures it sits above floated elements */
 }
 
 .blue5 {
