@@ -193,38 +193,35 @@
 /* -----------------------------------
    Activity 5 — Float with Text Wrap
 ----------------------------------- */
-/* Full-width color bars */
-.blue5, .red5, .green5 {
+/* Full-width horizontal bars */
+.red5, .blue5 {
   width: 100%;
   height: 100px;
-}
-
-.blue5 {
-  background-color: blue;
 }
 
 .red5 {
   background-color: red;
 }
 
-.green5 {
-  background-color: green;
-}
-
-/* Green box floats inside yellow text block */
-.green5 {
-  float: left;
-  width: 150px;
-  height: 150px;
-  margin: 20px;
+.blue5 {
+  background-color: blue;
 }
 
 /* Yellow section with wrapped text */
 .yellow5 {
   background-color: gold;
   padding: 20px;
-  overflow: hidden;
+  overflow: hidden; /* contains the float */
   line-height: 1.6;
+}
+
+/* Green box floats inside yellow section */
+.green5 {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 20px 0;
+  background-color: green;
 }
 
 /* -----------------------------------
