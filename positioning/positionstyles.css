@@ -230,6 +230,7 @@
 /* -----------------------------------
    Activity 6 — Complex Grid Layout
 ----------------------------------- */
+
 .content6 {
   position: relative;
   width: 700px;
@@ -237,12 +238,12 @@
   margin: 0 auto;
 }
 
-/* Red box — top center */
+/* Red box — top left */
 .red6 {
   position: absolute;
   top: 0;
-  left: 200px;
-  width: 300px;
+  left: 0;
+  width: 200px;
   height: 100px;
   background-color: red;
   z-index: 4;
@@ -251,7 +252,7 @@
 /* Blue box — large center block */
 .blue6 {
   position: absolute;
-  top: 50px;
+  top: 100px;
   left: 150px;
   width: 400px;
   height: 400px;
@@ -259,22 +260,22 @@
   z-index: 3;
 }
 
-/* Yellow box — right side */
+/* Yellow box — right side, overlapping blue */
 .yellow6 {
   position: absolute;
-  top: 150px;
-  left: 500px;
+  top: 200px;
+  left: 450px;
   width: 200px;
   height: 200px;
   background-color: gold;
   z-index: 2;
 }
 
-/* Green box — bottom left */
+/* Green box — bottom left, overlapping blue */
 .green6 {
   position: absolute;
-  top: 400px;
-  left: 50px;
+  top: 350px;
+  left: 100px;
   width: 200px;
   height: 200px;
   background-color: green;
