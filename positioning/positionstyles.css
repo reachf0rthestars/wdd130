@@ -197,6 +197,7 @@
 /* Layout container */
 .content5 {
   overflow: hidden;
+  position: relative;
 }
 
 /* Full-width horizontal bars */
@@ -227,8 +228,9 @@
   background-color: gold;
   padding: 20px;
   line-height: 1.6;
-  margin-top: -150px;   /* pulls yellow section up over green box */
-  margin-left: 190px;   /* pushes text to the right of green box */
+  margin-top: -170px;   /* pull up over green box */
+  margin-left: 190px;   /* push text to the right of green box */
+  min-height: 200px;
   overflow: hidden;
 }
 /* -----------------------------------
