@@ -232,7 +232,7 @@
   overflow: hidden;
 }
 /* -----------------------------------
-   Activity 6 — Complex Grid Layout/* Container for all boxes */
+/* Container for all boxes */
 .content6 {
   position: relative;
   width: 700px;
@@ -240,7 +240,7 @@
   margin: 0 auto;
 }
 
-/* Blue box — large center block (bottom layer) */
+/* Blue box — large center block (middle layer) */
 .blue6 {
   position: absolute;
   top: 100px;
@@ -248,10 +248,10 @@
   width: 400px;
   height: 400px;
   background-color: blue;
-  z-index: 1;
+  z-index: 2; /* middle layer */
 }
 
-/* Red box — top left, overlapping blue */
+/* Red box — top left, underneath blue */
 .red6 {
   position: absolute;
   top: 50px;
@@ -259,27 +259,25 @@
   width: 200px;
   height: 100px;
   background-color: red;
+  z-index: 1; /* below blue */
+}
+.yellow6 {
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  width: 200px;
+  height: 400px; /* now matches green box bottom */
+  background-color: gold;
   z-index: 4;
 }
 
-/* Yellow box — right side, overlapping blue */
-.yellow6 {
-  position: absolute;
-  top: 150px;        /* lowered slightly to overlap blue */
-  left: 450px;       /* aligned to right edge of blue */
-  width: 200px;
-  height: 350px;
-  background-color: gold;
-  z-index: 3;
-}
-
-/* Green box — bottom left, overlapping blue */
+/* Green box — bottom left, above blue */
 .green6 {
   position: absolute;
-  top: 350px;        /* aligns with bottom of blue */
-  left: 100px;       /* aligns with left edge of red */
+  top: 350px;
+  left: 100px;
   width: 200px;
   height: 200px;
   background-color: green;
-  z-index: 2;
+  z-index: 3; /* above blue, below yellow */
 }
