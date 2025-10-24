@@ -193,9 +193,10 @@
 /* -----------------------------------
    Activity 5 — Float with Text Wrap
 ----------------------------------- *//* Make content5 the positioning container */
-/* Make content5 a float container */
+/* Make content5 a float container *//* Layout container */
 .content5 {
   overflow: hidden;
+  position: relative;
 }
 
 /* Full-width horizontal bars */
@@ -217,15 +218,17 @@
   float: left;
   width: 150px;
   height: 150px;
-  margin: 0 20px 20px 0;
+  margin: 0 20px 0 20px;
   background-color: green;
 }
 
-/* Yellow section wraps around floated green box */
+/* Yellow section visually overlaps green box */
 .yellow5 {
   background-color: gold;
   padding: 20px;
   line-height: 1.6;
+  margin-top: -150px;   /* pull yellow section up over green box */
+  margin-left: 190px;   /* push text to the right of green box */
   overflow: hidden;
 }
 /* -----------------------------------
