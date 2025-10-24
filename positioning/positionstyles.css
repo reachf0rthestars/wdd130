@@ -253,7 +253,7 @@
   left: 150px;
   width: 400px;
   height: 400px;
-  background-color: yellow;
+  background-color: blue;
   z-index: 2; /* middle layer */
 }
 
