@@ -5,6 +5,8 @@
 .blue1, .blue2, .blue3, .blue4, .blue5, .blue6 {
   box-sizing: border-box;
 }
+
+/* ------------------ Activity 1 ------------------ */
 .content1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,7 +16,6 @@
   justify-items: center;
 }
 
-/* Red box — full width */
 .red1 {
   grid-column: 1 / 3;
   grid-row: 1;
@@ -23,41 +24,26 @@
   background-color: red;
 }
 
-/* Green boxes — side by side */
-.green1:nth-of-type(2) {
-  grid-column: 1;
-  grid-row: 2;
-  width: 200px;
-  height: 200px;
-  background-color: green;
-}
-
+.green1:nth-of-type(2),
 .green1:nth-of-type(3) {
-  grid-column: 2;
-  grid-row: 2;
   width: 200px;
   height: 200px;
   background-color: green;
 }
 
-/* Yellow boxes — side by side */
-.yellow1:nth-of-type(4) {
-  grid-column: 1;
-  grid-row: 3;
-  width: 200px;
-  height: 200px;
-  background-color: gold;
-}
+.green1:nth-of-type(2) { grid-column: 1; grid-row: 2; }
+.green1:nth-of-type(3) { grid-column: 2; grid-row: 2; }
 
+.yellow1:nth-of-type(4),
 .yellow1:nth-of-type(5) {
-  grid-column: 2;
-  grid-row: 3;
   width: 200px;
   height: 200px;
   background-color: gold;
 }
 
-/* Purple box — full width */
+.yellow1:nth-of-type(4) { grid-column: 1; grid-row: 3; }
+.yellow1:nth-of-type(5) { grid-column: 2; grid-row: 3; }
+
 .blue1 {
   grid-column: 1 / 3;
   grid-row: 4;
@@ -66,9 +52,7 @@
   background-color: blue;
 }
 
-/* Optional: add a second blue box if needed for row 5 */
-
-/* Activity 2 */
+/* ------------------ Activity 2 ------------------ */
 .content2 {
   position: relative;
   width: 300px;
@@ -76,51 +60,26 @@
   margin: 0 auto;
 }
 
-/* All boxes are absolutely positioned and layered */
 .red2, .green2, .yellow2, .blue2 {
   position: absolute;
   width: 100px;
   height: 100px;
 }
 
-/* Layered diagonally with z-index */
-.red2 {
-  top: 0px;
-  left: 0px;
-  z-index: 4;
-  background-color: red;
-}
+.red2    { top: 0px;   left: 0px;   z-index: 4; background-color: red; }
+.green2  { top: 30px;  left: 30px;  z-index: 3; background-color: green; }
+.yellow2 { top: 60px;  left: 60px;  z-index: 2; background-color: gold; }
+.blue2   { top: 90px;  left: 90px;  z-index: 1; background-color: blue; }
 
-.green2 {
-  top: 30px;
-  left: 30px;
-  z-index: 3;
-  background-color: green;
-}
-
-.yellow2 {
-  top: 60px;
-  left: 60px;
-  z-index: 2;
-  background-color: gold;
-}
-
-.blue2 {
-  top: 90px;
-  left: 90px;
-  z-index: 1;
-  background-color: blue;
-}
+/* ------------------ Activity 3 ------------------ */
 .content3 {
   display: grid;
-  grid-template-columns: 1fr 60px 1fr; /* green | gap | yellow */
+  grid-template-columns: 1fr 60px 1fr;
   grid-template-rows: 100px 200px 100px;
-  gap: 0px; /* we’re manually defining the gap column */
   width: 100%;
   justify-items: center;
 }
 
-/* Red box — full width top */
 .red3 {
   grid-column: 1 / 4;
   grid-row: 1;
@@ -129,7 +88,6 @@
   background-color: red;
 }
 
-/* Green box — left middle */
 .green3 {
   grid-column: 1;
   grid-row: 2;
@@ -138,7 +96,6 @@
   background-color: green;
 }
 
-/* Yellow box — right middle */
 .yellow3 {
   grid-column: 3;
   grid-row: 2;
@@ -147,7 +104,6 @@
   background-color: gold;
 }
 
-/* Blue box — full width bottom */
 .blue3 {
   grid-column: 1 / 4;
   grid-row: 3;
@@ -155,25 +111,24 @@
   height: 100px;
   background-color: blue;
 }
+
+/* ------------------ Activity 4 ------------------ */
 .content4 {
   display: grid;
-  grid-template-columns: 1fr 1fr;           /* red | stacked right column */
-  grid-template-rows: 1fr 1fr 1fr;          /* three equal rows */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
-  height: 600px;                            /* adjust as needed to match proportions */
-  gap: 0px;
+  height: 600px;
 }
 
-/* Red box — full height left side */
 .red4 {
   grid-column: 1;
-  grid-row: 1 / 4;                          /* spans all three rows */
+  grid-row: 1 / 4;
   width: 100%;
   height: 100%;
   background-color: red;
 }
 
-/* Green box — top right */
 .green4 {
   grid-column: 2;
   grid-row: 1;
@@ -182,7 +137,6 @@
   background-color: green;
 }
 
-/* Yellow box — middle right */
 .yellow4 {
   grid-column: 2;
   grid-row: 2;
@@ -191,7 +145,6 @@
   background-color: gold;
 }
 
-/* Blue box — bottom right */
 .blue4 {
   grid-column: 2;
   grid-row: 3;
@@ -200,39 +153,36 @@
   background-color: blue;
 }
 
-/* Activity 5 */
-/* Green box floats left */
+/* ------------------ Activity 5 ------------------ */
 .green5 {
   float: left;
   width: 150px;
   height: 150px;
-  margin: 0 20px 20px 0; /* adds space between box and text */
+  margin: 0 20px 20px 0;
   background-color: green;
 }
 
-/* Yellow box holds the text */
 .yellow5 {
   background-color: gold;
   padding: 20px;
-  overflow: hidden; /* ensures layout doesn’t collapse */
+  overflow: hidden;
   line-height: 1.6;
 }
 
-/* Optional: hide unused red/blue boxes */
 .red5, .blue5 {
   display: none;
 }
-/* Activity 6 */.content6 {
+
+/* ------------------ Activity 6 ------------------ */
+.content6 {
   display: grid;
   grid-template-columns: repeat(7, 100px);
   grid-template-rows: repeat(6, 100px);
-  gap: 0px;
-  position: relative;
   width: 700px;
   height: 600px;
+  position: relative;
 }
 
-/* Red block: top-left */
 .red6 {
   grid-column: 1 / 4;
   grid-row: 1 / 3;
@@ -240,7 +190,6 @@
   z-index: 4;
 }
 
-/* Blue block: large center */
 .blue6 {
   grid-column: 2 / 6;
   grid-row: 2 / 6;
@@ -248,7 +197,6 @@
   z-index: 3;
 }
 
-/* Yellow block: right side */
 .yellow6 {
   grid-column: 6 / 8;
   grid-row: 2 / 6;
@@ -256,7 +204,6 @@
   z-index: 2;
 }
 
-/* Green block: bottom-left */
 .green6 {
   grid-column: 1 / 3;
   grid-row: 5 / 7;
