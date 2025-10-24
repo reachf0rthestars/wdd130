@@ -212,8 +212,6 @@
 .blue5 {
   background-color: blue;
 }
-
-/* Green box floats left */
 .green5 {
   float: left;
   width: 150px;
@@ -222,13 +220,12 @@
   background-color: green;
 }
 
-/* Yellow section visually overlaps green box */
 .yellow5 {
   background-color: gold;
   padding: 20px;
   line-height: 1.6;
-  margin-top: -150px;   /* pull yellow section up over green box */
-  margin-left: 190px;   /* push text to the right of green box */
+  margin-top: -150px;
+  margin-left: 190px;
   overflow: hidden;
 }
 /* -----------------------------------
@@ -256,8 +253,8 @@
   position: absolute;
   top: 50px;
   left: 100px;
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   background-color: red;
   z-index: 1; /* below blue */
 }
