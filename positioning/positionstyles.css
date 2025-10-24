@@ -5,31 +5,68 @@
 .blue1, .blue2, .blue3, .blue4, .blue5, .blue6 {
   box-sizing: border-box;
 }
-
-/* Activity 1 */
 .content1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  grid-template-rows: 100px 200px 200px 100px 100px;
   gap: 20px;
+  width: 100%;
+  justify-items: center;
 }
 
-.red1, .blue1 {
+/* Red box — full width */
+.red1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
   width: 100%;
   height: 100px;
-  grid-column: 1 / 3;
+  background-color: red;
 }
 
-.green1, .yellow1 {
+/* Green boxes — side by side */
+.green1:nth-of-type(2) {
+  grid-column: 1;
+  grid-row: 2;
   width: 200px;
   height: 200px;
+  background-color: green;
 }
 
-/* Use nth-of-type to place boxes without changing HTML */
-.content1 .green1:nth-of-type(2)  { grid-column: 1; grid-row: 1; }
-.content1 .green1:nth-of-type(3)  { grid-column: 2; grid-row: 1; }
-.content1 .yellow1:nth-of-type(4) { grid-column: 1; grid-row: 2; }
-.content1 .yellow1:nth-of-type(5) { grid-column: 2; grid-row: 2; }
+.green1:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+/* Yellow boxes — side by side */
+.yellow1:nth-of-type(4) {
+  grid-column: 1;
+  grid-row: 3;
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+}
+
+.yellow1:nth-of-type(5) {
+  grid-column: 2;
+  grid-row: 3;
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+}
+
+/* Purple box — full width */
+.blue1 {
+  grid-column: 1 / 3;
+  grid-row: 4;
+  width: 100%;
+  height: 100px;
+  background-color: purple;
+}
+
+/* Optional: add a second blue box if needed for row 5 */
 
 /* Activity 2 */
 .content2 {
