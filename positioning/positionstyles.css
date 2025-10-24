@@ -213,15 +213,18 @@
   padding: 20px;
   overflow: hidden; /* contains the float */
   line-height: 1.6;
+  position: relative;
 }
 
 /* Green box floats inside yellow section */
-.yellow5 .green5 {
-  float: left;
+.green5 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   width: 150px;
   height: 150px;
-  margin: 0 20px 20px 0;
   background-color: green;
+  z-index: 2;
 }
 
 /* -----------------------------------
