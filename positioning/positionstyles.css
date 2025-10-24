@@ -154,21 +154,50 @@
   height: 100px;
   background-color: blue;
 }
-
-/* Activity 4 */
 .content4 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 200px 100px;
-  gap: 10px;
-  width: 560px;
-  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;           /* red | stacked right column */
+  grid-template-rows: 1fr 1fr 1fr;          /* three equal rows */
+  width: 100%;
+  height: 600px;                            /* adjust as needed to match proportions */
+  gap: 0px;
 }
 
-.red4    { grid-column: 1 / 3; grid-row: 1; }
-.green4  { grid-column: 1;     grid-row: 2; }
-.yellow4 { grid-column: 2;     grid-row: 2; }
-.blue4   { grid-column: 1 / 3; grid-row: 3; }
+/* Red box — full height left side */
+.red4 {
+  grid-column: 1;
+  grid-row: 1 / 4;                          /* spans all three rows */
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+/* Green box — top right */
+.green4 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+/* Yellow box — middle right */
+.yellow4 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+}
+
+/* Blue box — bottom right */
+.blue4 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
 
 /* Activity 5 */
 .green5 {
