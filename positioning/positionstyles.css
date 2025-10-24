@@ -218,16 +218,16 @@
 /* Green box floats left */
 .green5 {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: green;
 }
 
 /* Yellow section simulates wrapping */
 .yellow5 {
-  background-color: gold;
-  height: 200px;
-  width: 800px;
+  background-color: yellow;
+  height: 275px;
+  width: 700px;
 }
 
 
