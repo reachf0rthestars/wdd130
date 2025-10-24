@@ -202,8 +202,9 @@
 
 /* Red and Blue bars */
 .red5, .blue5 {
-  width: 100%;
+  width: 800px;
   height: 100px;
+
 }
 
 .red5 {
@@ -226,7 +227,9 @@
 .yellow5 {
   background-color: gold;
   height: 200px;
+  width: 800px;
 }
+
 
 
 /* -----------------------------------
