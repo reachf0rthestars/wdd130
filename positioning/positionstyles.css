@@ -193,8 +193,9 @@
 /* -----------------------------------
    Activity 5 — Float with Text Wrap
 ----------------------------------- *//* Make content5 the positioning container */
+/* Make content5 a float container */
 .content5 {
-  position: relative;
+  overflow: hidden;
 }
 
 /* Full-width horizontal bars */
@@ -211,27 +212,22 @@
   background-color: blue;
 }
 
-/* Yellow section with instructional text */
+/* Green box floats left */
+.green5 {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 20px 0;
+  background-color: green;
+}
+
+/* Yellow section wraps around floated green box */
 .yellow5 {
   background-color: gold;
   padding: 20px;
   line-height: 1.6;
-  min-height: 250px; /* ensures enough space for green box */
+  overflow: hidden;
 }
-
-/* Green box visually placed over yellow section */
-.green5 {
-  position: absolute;
-  top: 120px; /* adjust until it overlaps yellow5 */
-  left: 20px;
-  width: 150px;
-  height: 150px;
-  background-color: green;
-  z-index: 1;
-}
-
-
-
 /* -----------------------------------
    Activity 6 — Complex Grid Layout
 ----------------------------------- */
