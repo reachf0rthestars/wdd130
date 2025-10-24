@@ -206,27 +206,20 @@
 .blue5 {
   background-color: blue;
 }
-
-/* Yellow section with wrapped text */
 .yellow5 {
   background-color: gold;
   padding: 20px;
-  overflow: hidden; /* contains the float */
+  overflow: hidden;
   line-height: 1.6;
-  position: relative;
 }
 
-/* Green box floats inside yellow section */
 .green5 {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  float: left;
   width: 150px;
   height: 150px;
+  margin: 0 20px 20px 0;
   background-color: green;
-  z-index: 2;
 }
-
 /* -----------------------------------
    Activity 6 — Complex Grid Layout
 ----------------------------------- */
