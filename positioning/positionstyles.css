@@ -232,53 +232,44 @@
 
 
 
-/* -----------------------------------
-/* Container for all boxes */
 .content6 {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 100px); /* 700px wide */
+  grid-template-rows: repeat(6, 100px);    /* 600px tall */
   width: 700px;
   height: 600px;
+  position: relative;
   margin: 0 auto;
 }
 
-/* Blue box — large center block (middle layer) */
-.blue6 {
-  position: absolute;
-  top: 100px;
-  left: 150px;
-  width: 400px;
-  height: 400px;
-  background-color: blue;
-  z-index: 2; /* middle layer */
-}
-
-/* Red box — top left, underneath blue */
+/* Red box — top left */
 .red6 {
-  position: absolute;
-  top: 50px;
-  left: 100px;
-  width: 300px;
-  height: 200px;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
   background-color: red;
-  z-index: 1; /* below blue */
-}
-.yellow6 {
-  position: absolute;
-  top: 150px;
-  left: 450px;
-  width: 200px;
-  height: 400px; /* now matches green box bottom */
-  background-color: gold;
-  z-index: 4;
+  z-index: 1;
 }
 
-/* Green box — bottom left, above blue */
+/* Blue box — large center block */
+.blue6 {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 4;
+  background-color: blue;
+  z-index: 3;
+}
+
+/* Yellow box — right side */
+.yellow6 {
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 4;
+  background-color: gold;
+  z-index: 5;
+}
+
+/* Green box — bottom left */
 .green6 {
-  position: absolute;
-  top: 350px;
-  left: 100px;
-  width: 200px;
-  height: 200px;
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
   background-color: green;
-  z-index: 3; /* above blue, below yellow */
+  z-index: 4;
 }
