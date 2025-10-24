@@ -216,7 +216,7 @@
 }
 
 /* Green box floats inside yellow section */
-.green5 {
+.yellow5 .green5 {
   float: left;
   width: 150px;
   height: 150px;
