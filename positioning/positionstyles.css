@@ -214,13 +214,11 @@
 .blue5 {
   background-color: blue;
 }
-
-/* Green box floats left */
 .green5 {
   float: left;
   width: 150px;
   height: 150px;
-  margin: 0 20px 0 20px;
+  margin: 20px 20px 20px 20px;
   background-color: green;
 }
 
