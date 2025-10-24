@@ -115,7 +115,7 @@
   display: grid;
   grid-template-columns: 1fr 60px 1fr; /* green | gap | yellow */
   grid-template-rows: 100px 200px 100px;
-  gap: 10px; /* we’re manually defining the gap column */
+  gap: 0px; /* we’re manually defining the gap column */
   width: 100%;
   justify-items: center;
 }
