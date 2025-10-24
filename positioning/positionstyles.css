@@ -193,6 +193,8 @@
 /* -----------------------------------
    Activity 5 — Float with Text Wrap
 ----------------------------------- */
+
+
 /* Full-width horizontal bars */
 .red5, .blue5 {
   width: 100%;
@@ -215,8 +217,17 @@
   line-height: 1.6;
 }
 
-/* Green box floats inside yellow section */
-.green5 {
+/* Green box floats inside yellow section only */
+.content5 .yellow5 + .blue5 ~ .green5 {
+  display: none; /* hide the full-width green bar */
+}
+
+.yellow5 + .blue5 ~ .green5 {
+  display: none; /* fallback in case of sibling order */
+}
+
+/* Float the green box inside yellow */
+.yellow5 .green5 {
   float: left;
   width: 150px;
   height: 150px;
