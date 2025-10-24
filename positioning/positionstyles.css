@@ -225,8 +225,6 @@
 /* Yellow section simulates wrapping */
 .yellow5 {
   background-color: gold;
-  pa /* ensures yellow section is tall enough */
-  overflow: hidden;
 }
 
 
