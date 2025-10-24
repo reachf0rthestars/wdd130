@@ -110,11 +110,12 @@
   left: 90px;
   z-index: 1;
   background-color: blue;
-}.content3 {
+}
+.content3 {
   display: grid;
-  grid-template-columns: 1fr 20px 1fr; /* green | gap | yellow */
+  grid-template-columns: 1fr 60px 1fr; /* green | gap | yellow */
   grid-template-rows: 100px 200px 100px;
-  gap: 0px; /* we’re manually defining the gap column */
+  gap: 10px; /* we’re manually defining the gap column */
   width: 100%;
   justify-items: center;
 }
@@ -200,29 +201,27 @@
 }
 
 /* Activity 5 */
+/* Green box floats left */
 .green5 {
   float: left;
   width: 150px;
   height: 150px;
-  margin-right: 20px;
+  margin: 0 20px 20px 0; /* adds space between box and text */
+  background-color: green;
 }
 
+/* Yellow box holds the text */
 .yellow5 {
-  overflow: hidden;
-  height: auto;
+  background-color: gold;
+  padding: 20px;
+  overflow: hidden; /* ensures layout doesn’t collapse */
+  line-height: 1.6;
 }
 
+/* Optional: hide unused red/blue boxes */
 .red5, .blue5 {
-  display: none; /* Not used in layout, hide if needed */
+  display: none;
 }
-
-/* Clear float if needed */
-.content5::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /* Activity 6 */
 .content6 {
   display: grid;
