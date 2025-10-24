@@ -217,17 +217,16 @@
 /* Green box floats left */
 .green5 {
   float: left;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: green;
 }
 
 /* Yellow section simulates wrapping */
 .yellow5 {
   background-color: gold;
+  height: 200px;
 }
-
-
 
 
 /* -----------------------------------
