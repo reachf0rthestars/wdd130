@@ -316,3 +316,82 @@ footer a:hover {
     margin-top: 25px;
   }
 }
+@media screen and (max-width: 900px) {
+  /* Layout adjustments */
+  #hero, .home-grid {
+    display: block;
+    height: auto;
+  }
+
+  nav, footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  #hero {
+    margin-top: 0;
+  }
+
+  #hero-msg {
+    margin-top: 0;
+  }
+
+  #hero-msg h4 {
+    display: none;
+  }
+
+  #hero-msg h1 {
+    color: #6f7364;
+  }
+
+  .home-title {
+    font-size: 25px;
+  }
+
+  .rivers-card, .camping-card, .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+
+  #background {
+    display: none;
+  }
+
+  .mountains, .msg {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+  }
+
+  footer {
+    margin-top: 25px;
+  }
+
+  /* 📦 Mobile-friendly "More Than Just The Thrill" box */
+  .msg {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .msg h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .msg p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .join {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
