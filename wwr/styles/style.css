@@ -396,10 +396,12 @@ footer a:hover {
   }
 }
 /* River-specific image styling */
+/* Consistent sizing for river images */
 .river-img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 400px;
+  aspect-ratio: 4 / 3; /* Ensures consistent shape */
+  object-fit: cover;   /* Crops excess while preserving aspect */
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
@@ -416,6 +418,6 @@ footer a:hover {
 @media screen and (max-width: 900px) {
   .river-img {
     max-width: 90%;
-    margin: 15px auto;
+    aspect-ratio: 4 / 3;
   }
 }
