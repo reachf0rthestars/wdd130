@@ -355,3 +355,111 @@ footer a:hover {
     aspect-ratio: 4 / 3;
   }
 }
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+    display: block;
+    height: auto;
+  }
+
+  nav, footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  #hero-msg {
+    margin-top: 0;
+  }
+
+  #hero-msg h4 {
+    display: none;
+  }
+
+  #hero-msg h1 {
+    color: #6f7364;
+    font-size: 28px;
+  }
+
+  .home-title {
+    font-size: 25px;
+  }
+
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  #background {
+    display: none;
+  }
+
+  .mountains {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #6f7364;
+  }
+
+  .rivers-page .msg {
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #6f7364;
+    color: #f8e9e9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+    position: relative;
+    z-index: 1;
+  }
+
+  .rivers-page .msg h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FFC145;
+  }
+
+  .rivers-page .msg p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .rivers-page .join {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #FF4A1C;
+    color: #f8e9e9;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .rivers-page .join:hover {
+    background-color: #FFC145;
+    color: #50514F;
+  }
+
+  .river-img {
+    max-width: 90%;
+    aspect-ratio: 4 / 3;
+  }
+
+  footer {
+    margin-top: 25px;
+  }
+}
