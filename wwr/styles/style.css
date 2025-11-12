@@ -421,3 +421,73 @@ footer a:hover {
     aspect-ratio: 4 / 3;
   }
 }
+/* Scoped styling for "Why Our Rivers Stand Out" only on rivers.html */
+.rivers-page .msg {
+  background-color: #6f7364;
+  color: #f8e9e9;
+  padding: 40px;
+  grid-column: 2 / 10;
+  grid-row: 2 / 3;
+  box-shadow: 5px 5px 10px #6f7364;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rivers-page .msg h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #FFC145;
+}
+
+.rivers-page .msg p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rivers-page .join {
+  font-size: 18px;
+  padding: 12px 26px;
+  background-color: #FF4A1C;
+  color: #f8e9e9;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.rivers-page .join:hover {
+  background-color: #FFC145;
+  color: #50514F;
+}
+
+/* Mobile tweaks for rivers page */
+@media screen and (max-width: 900px) {
+  .rivers-page .msg {
+    width: 90%;
+    padding: 25px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .rivers-page .msg h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .rivers-page .msg p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .rivers-page .join {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
