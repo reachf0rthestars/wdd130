@@ -395,3 +395,27 @@ footer a:hover {
     padding: 12px 24px;
   }
 }
+/* River-specific image styling */
+.river-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.river-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 900px) {
+  .river-img {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+}
