@@ -1,11 +1,15 @@
-/* Typography and Base Styles */
-body.rivers-page {
+/* Reset and Typography */
+.rivers-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rivers-page body {
+  font-size: 22px;
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   background-color: #f8e9e9;
   color: #50514F;
-  font-size: 22px;
-  margin: 0;
-  padding: 0;
 }
 
 .rivers-page h1, 
@@ -14,6 +18,13 @@ body.rivers-page {
 .rivers-page h4 {
   font-family: 'Playfair Display', 'Georgia', serif;
   color: #FF4A1C;
+}
+
+/* Container */
+.rivers-page #content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
@@ -223,7 +234,7 @@ body.rivers-page {
   height: auto;
 }
 
-/* Responsive Layout */
+/* Responsive Tweaks */
 @media screen and (max-width: 900px) {
   .rivers-page #hero,
   .rivers-page .home-grid {
@@ -256,11 +267,20 @@ body.rivers-page {
     font-size: 28px;
   }
 
+  .rivers-page .home-title {
+    font-size: 25px;
+  }
+
   .rivers-page .rivers-card,
   .rivers-page .camping-card,
   .rivers-page .rapids-card {
     width: 90%;
     margin: 30px auto;
+  }
+
+  .rivers-page .river-img {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .rivers-page .icon {
