@@ -410,35 +410,3 @@ nav a:hover {
     padding: 8px 0;
   }
 }
-@media screen and (max-width: 900px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* centers the whole header block */
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #logo_link {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centers the stacked links */
-    gap: 10px;
-    width: 100%;
-  }
-
-  nav a {
-    display: block;
-    padding: 8px 0;
-  }
-}
