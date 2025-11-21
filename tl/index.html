@@ -4,117 +4,93 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Titan Lawn Mowing — Home</title>
-  <link rel="stylesheet" href="styles/site-plan.css">
+  <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
   <header>
     <div class="branding">
-      <img src="images/titan-logo.png" alt="Titan Lawn Mowing logo" width="120" height="120">
-      <div class="titles">
+      <a href="index.html" class="logo-link">
+        <img src="images/titan-logo.png" alt="Titan Lawn Mowing logo" width="96" height="96">
+      </a>
+      <div class="site-title">
         <h1>Titan Lawn Mowing</h1>
-        <h2>Addison Anglin — WDD 130 A2</h2>
+        <p class="subtitle">Reliable lawn care in Idaho Falls</p>
       </div>
     </div>
 
     <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section id="overview" aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Overview</h2>
-      <h3>Purpose</h3>
-      <p>
-        To promote Titan Lawn Mowing services and provide a clean, professional website where customers can learn about our offerings, view pricing, and schedule appointments. The site will serve as a digital storefront, showcasing our services, building trust with potential clients, and making it easy for them to get in touch or request a quote.
-      </p>
-
-      <h3>Audience</h3>
-      <p>
-        Homeowners, property managers, and busy individuals in Idaho Falls and surrounding areas who need reliable, affordable lawn care. Our audience values professionalism, punctuality, and quality results.
-      </p>
+    <section class="hero" aria-labelledby="hero-heading">
+      <h2 id="hero-heading">We Make Your Lawn the Neighborhood Favorite</h2>
+      <p class="lead">Weekly mowing, edging, seasonal cleanups, and custom packages — dependable service, professional results.</p>
+      <a class="cta" href="contact.html">Request a Free Estimate</a>
+      <img src="images/lawn1.png" alt="Freshly mowed lawn" class="hero-image" width="720">
     </section>
 
-    <section id="branding" aria-labelledby="branding-heading">
-      <h2 id="branding-heading">Branding</h2>
-      <h3>Style Guide</h3>
-      <p><strong>Heading font:</strong> Montserrat · <strong>Paragraph font:</strong> Open Sans</p>
+    <section class="services-summary" aria-labelledby="services-heading">
+      <h2 id="services-heading">Featured Services</h2>
 
-      <table class="colors" role="presentation">
-        <tr>
-          <th>Primary<br><small>#4CAF50</small></th>
-          <th>Secondary<br><small>#0B6623</small></th>
-          <th>Accent 1<br><small>#8B4513</small></th>
-          <th>Accent 2<br><small>#FFFFFF</small></th>
-        </tr>
-        <tr>
-          <td class="primary" style="width:80px;height:40px;background:#4CAF50"></td>
-          <td class="secondary" style="width:80px;height:40px;background:#0B6623"></td>
-          <td class="accent1" style="width:80px;height:40px;background:#8B4513"></td>
-          <td class="accent2" style="width:80px;height:40px;background:#ffffff;border:1px solid #ccc"></td>
-        </tr>
-      </table>
+      <div class="service-cards">
+        <article class="service">
+          <h3>Mowing & Maintenance</h3>
+          <p>Weekly or biweekly mowing with precise trimming and cleanup to keep your yard neat and healthy.</p>
+          <img src="images/mower.jpg" alt="Lawn mower in action" width="320">
+        </article>
+
+        <article class="service">
+          <h3>Edging & Cleanups</h3>
+          <p>Defined borders and seasonal leaf removal to keep your landscaping looking sharp year-round.</p>
+          <img src="images/edging.jpg" alt="Clean lawn edging" width="320">
+        </article>
+
+        <article class="service">
+          <h3>Custom Packages</h3>
+          <p>Tailored plans for property managers, busy families, and one-time projects — flexible scheduling available.</p>
+          <img src="images/services.png" alt="Services overview" width="320">
+        </article>
+      </div>
+
+      <p class="promo">New customers: 10% off your first scheduled service.</p>
     </section>
 
-    <section id="content" aria-labelledby="content-heading">
-      <h2 id="content-heading">Content</h2>
-
-      <article id="home" aria-labelledby="home-heading">
-        <h3 id="home-heading">Home</h3>
-        <p>
-          Welcome to Titan Lawn Mowing! We’re your local lawn care experts, offering dependable mowing, edging, and yard cleanup services. Our mission is to provide high-quality lawn care with a personal touch.
-        </p>
-        <p>Images for the Home page:</p>
-        <img src="images/lawn1.png" alt="Freshly mowed lawn" width="320">
-        <img src="images/lawn2.png" alt="Lawn care professional trimming grass" width="320">
-      </article>
-
-      <article id="services-summary" aria-labelledby="services-heading">
-        <h3 id="services-heading">Services</h3>
-        <p>
-          We offer weekly mowing, seasonal cleanups, edging, and custom lawn care packages. Our mowing service includes precise cutting, trimming, and blowing to leave your lawn looking clean and professional.
-        </p>
-        <p>Images for the Services page:</p>
-        <img src="images/services.png" alt="Services offered by Titan Lawn Mowing" width="320">
-        <img src="images/mower.jpg" alt="Lawn mower in action" width="320">
-        <img src="images/edging.jpg" alt="Clean lawn edging" width="320">
-      </article>
-
-      <article id="contact-summary" aria-labelledby="contact-heading">
-        <h3 id="contact-heading">Contact</h3>
-        <p>
-          Ready to book your service? Contact us today or use our online form to schedule a free estimate. We respond within 24 hours and are happy to answer any questions you may have.
-        </p>
-        <p>Image for the Contact page:</p>
-        <img src="images/contact.png" alt="Customer calling for service" width="320">
-      </article>
-    </section>
-
-    <section id="sitemap" aria-labelledby="sitemap-heading">
-      <h2 id="sitemap-heading">Site Map</h2>
-      <ul class="sitemap-list">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Contact</li>
+    <section class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Why Choose Titan</h2>
+      <ul>
+        <li>Locally owned and operated</li>
+        <li>Reliable scheduling and on-time service</li>
+        <li>Satisfaction guarantee on all jobs</li>
       </ul>
+      <p>We treat every yard like it’s our own. Our team is trained to deliver consistent, high-quality results with attention to detail.</p>
     </section>
 
-    <section id="wireframes" aria-labelledby="wireframes-heading">
-      <h2 id="wireframes-heading">Wireframes</h2>
-      <h3>Home</h3>
-      <img src="images/wireframe-home.png" alt="Home page wireframe" width="480">
-      <h3>Services</h3>
-      <img src="images/wireframe-services.png" alt="Services page wireframe" width="480">
-      <h3>Contact</h3>
-      <img src="images/wireframe-contact.png" alt="Contact page wireframe" width="480">
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">What Customers Say</h2>
+      <blockquote>
+        "Titan turned our yard into something we’re proud of. Prompt, professional, and reasonably priced." — A happy customer
+      </blockquote>
     </section>
   </main>
 
   <footer>
-    <p>© Titan Lawn Mowing</p>
-    <p><a href="site-plan.html">View site plan</a></p>
+    <div class="footer-inner">
+      <p>© Titan Lawn Mowing</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="site-plan-link">
+      <a href="site-plan.html">View site plan</a>
+    </div>
   </footer>
 </body>
 </html>
