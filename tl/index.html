@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Titan Lawn Care</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Titan Lawn Mowing — Home</title>
+  <link rel="stylesheet" href="styles/site-plan.css">
 </head>
 <body>
   <header>
-    <div class="logo-text">Titan Lawn Care</div>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#contact">Contact</a>
+    <div class="branding">
+      <img src="images/titan-logo.png" alt="Titan Lawn Mowing logo" width="120" height="120">
+      <div class="titles">
+        <h1>Titan Lawn Mowing</h1>
+        <h2>Addison Anglin — WDD 130 A2</h2>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <div id="hero">
-    <section id="hero-msg">
-      <h1 class="home-title">Clean Cuts, Sharp Service</h1>
-      <h4>Your lawn, our pride</h4>
-      <div class="button-box">
-        <a class="book" href="#contact">Get a Quote</a>
-      </div>
-    </section>
-  </div>
+  <main>
+    <section id="overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Overview</h2>
+      <h3>Purpose</h3>
+      <p>
+        To promote Titan Lawn Mowing services and provide a clean, professional website where customers can learn about our offerings, view pricing, and schedule appointments. The site will serve as a digital storefront, showcasing our services, building trust with potential clients, and making it easy for them to get in touch or request a quote.
+      </p>
 
-  <main class="home-grid">
-    <section class="service-card">
-      <img src="https://byui-wdd.github.io/wdd130/rafting_images/rafting1.jpg" alt="Lawn mower cutting grass">
-      <h2>Mowing</h2>
-    </section>
-    <section class="service-card">
-      <img src="https://byui-wdd.github.io/wdd130/rafting_images/rafting2.jpg" alt="Clean edge along sidewalk">
-      <h2>Edging</h2>
-    </section>
-    <section class="service-card">
-      <img src="https://byui-wdd.github.io/wdd130/rafting_images/rafting3.jpg" alt="Leaf cleanup in yard">
-      <h2>Cleanup</h2>
+      <h3>Audience</h3>
+      <p>
+        Homeowners, property managers, and busy individuals in Idaho Falls and surrounding areas who need reliable, affordable lawn care. Our audience values professionalism, punctuality, and quality results.
+      </p>
     </section>
 
-    <section class="msg">
-      <h2>More Than Just Grass</h2>
-      <p>We bring precision, care, and consistency to every yard. Whether it's weekly maintenance or seasonal cleanup, Titan Lawn Care is your partner in curb appeal.</p>
-      <a class="join" href="#contact">Explore Services</a>
+    <section id="branding" aria-labelledby="branding-heading">
+      <h2 id="branding-heading">Branding</h2>
+      <h3>Style Guide</h3>
+      <p><strong>Heading font:</strong> Montserrat · <strong>Paragraph font:</strong> Open Sans</p>
+
+      <table class="colors" role="presentation">
+        <tr>
+          <th>Primary<br><small>#4CAF50</small></th>
+          <th>Secondary<br><small>#0B6623</small></th>
+          <th>Accent 1<br><small>#8B4513</small></th>
+          <th>Accent 2<br><small>#FFFFFF</small></th>
+        </tr>
+        <tr>
+          <td class="primary" style="width:80px;height:40px;background:#4CAF50"></td>
+          <td class="secondary" style="width:80px;height:40px;background:#0B6623"></td>
+          <td class="accent1" style="width:80px;height:40px;background:#8B4513"></td>
+          <td class="accent2" style="width:80px;height:40px;background:#ffffff;border:1px solid #ccc"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="content" aria-labelledby="content-heading">
+      <h2 id="content-heading">Content</h2>
+
+      <article id="home" aria-labelledby="home-heading">
+        <h3 id="home-heading">Home</h3>
+        <p>
+          Welcome to Titan Lawn Mowing! We’re your local lawn care experts, offering dependable mowing, edging, and yard cleanup services. Our mission is to provide high-quality lawn care with a personal touch.
+        </p>
+        <p>Images for the Home page:</p>
+        <img src="images/lawn1.png" alt="Freshly mowed lawn" width="320">
+        <img src="images/lawn2.png" alt="Lawn care professional trimming grass" width="320">
+      </article>
+
+      <article id="services-summary" aria-labelledby="services-heading">
+        <h3 id="services-heading">Services</h3>
+        <p>
+          We offer weekly mowing, seasonal cleanups, edging, and custom lawn care packages. Our mowing service includes precise cutting, trimming, and blowing to leave your lawn looking clean and professional.
+        </p>
+        <p>Images for the Services page:</p>
+        <img src="images/services.png" alt="Services offered by Titan Lawn Mowing" width="320">
+        <img src="images/mower.jpg" alt="Lawn mower in action" width="320">
+        <img src="images/edging.jpg" alt="Clean lawn edging" width="320">
+      </article>
+
+      <article id="contact-summary" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Contact</h3>
+        <p>
+          Ready to book your service? Contact us today or use our online form to schedule a free estimate. We respond within 24 hours and are happy to answer any questions you may have.
+        </p>
+        <p>Image for the Contact page:</p>
+        <img src="images/contact.png" alt="Customer calling for service" width="320">
+      </article>
+    </section>
+
+    <section id="sitemap" aria-labelledby="sitemap-heading">
+      <h2 id="sitemap-heading">Site Map</h2>
+      <ul class="sitemap-list">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </section>
+
+    <section id="wireframes" aria-labelledby="wireframes-heading">
+      <h2 id="wireframes-heading">Wireframes</h2>
+      <h3>Home</h3>
+      <img src="images/wireframe-home.png" alt="Home page wireframe" width="480">
+      <h3>Services</h3>
+      <img src="images/wireframe-services.png" alt="Services page wireframe" width="480">
+      <h3>Contact</h3>
+      <img src="images/wireframe-contact.png" alt="Contact page wireframe" width="480">
     </section>
   </main>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>Call or Text: <strong>208-419-7521</strong></p>
-    <p>Email: <a href="mailto:titanlawncare@example.com">titanlawncare@example.com</a></p>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="4" required></textarea><br /><br />
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
   <footer>
-    <p>Titan Lawn Care &copy; Started 2020 - Gideon Anglin</p>
-    <p class="contact-info">Call or Text: 208-419-7521</p>
-    <p><a href="#contact">Contact Us</a></p>
+    <p>© Titan Lawn Mowing</p>
+    <p><a href="site-plan.html">View site plan</a></p>
   </footer>
 </body>
 </html>
