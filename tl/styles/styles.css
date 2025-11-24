@@ -39,7 +39,7 @@ img {
   border-radius: 8px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -48,19 +48,8 @@ h2 {
   text-align: center;
 }
 
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-
 p {
   padding: 1em;
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
 }
 
 /* Header */
@@ -173,6 +162,13 @@ main {
   text-align: center;
 }
 
+.services-summary h2 {
+  display: inline-block;
+  border-bottom: 6px solid var(--secondary-color);
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+}
+
 .service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -200,17 +196,42 @@ main {
 }
 
 /* About Section */
+.about {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  border-bottom: 4px solid var(--secondary-color);
+  display: inline-block;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+}
+
 .about ul {
   list-style: disc;
   padding-left: 2em;
-  text-align: left;
+  margin-bottom: 1em;
 }
 
 .about p {
-  text-align: left;
+  margin-top: 0;
 }
 
 /* Testimonials */
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h2 {
+  border-bottom: 4px solid var(--secondary-color);
+  display: inline-block;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+}
+
 .testimonials blockquote {
   font-style: italic;
   border-left: 4px solid var(--accent1-color);
@@ -270,44 +291,4 @@ footer {
     flex-direction: column;
     gap: 1em;
   }
-}
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2em 1em;
-  display: grid;
-  gap: 3em;
-}
-
-/* Services heading underline fix */
-.services-summary h2 {
-  display: inline-block;
-  border-bottom: 6px solid var(--secondary-color);
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
-}
-
-/* About section alignment fix */
-.about {
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about h2 {
-  text-align: center;
-  border-bottom: 4px solid var(--secondary-color);
-  display: inline-block;
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
-}
-
-.about ul {
-  list-style: disc;
-  padding-left: 2em;
-  margin-bottom: 1em;
-}
-
-.about p {
-  margin-top: 0;
 }
