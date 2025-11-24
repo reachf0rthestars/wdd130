@@ -23,11 +23,8 @@
 
 /* Base styles */
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
+  margin: 0;
   font-size: 18px;
-  text-align: center;
   font-family: var(--paragraph-font);
   background-color: var(--accent2-color);
   color: var(--paragraph-color-on-white);
@@ -66,16 +63,12 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-/* Header and Branding */
+/* Header */
 header {
-  padding: 1em;
-  text-align: center;
+  width: 100%;
   background-color: var(--paragraph-background-color);
   color: var(--headline-color-on-color);
-}
-
-header h1, header h2 {
-  color: var(--headline-color-on-color);
+  padding: 1em 0;
 }
 
 .branding {
@@ -83,7 +76,7 @@ header h1, header h2 {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  margin-bottom: 1em;
+  flex-wrap: wrap;
 }
 
 .site-title h1 {
@@ -100,8 +93,6 @@ header h1, header h2 {
 /* Navigation */
 nav {
   background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
   font-size: 1.2em;
 }
 
@@ -131,10 +122,14 @@ nav {
 
 /* Main layout */
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3em;
   padding: 2em 1em;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3em;
 }
 
 /* Hero Section */
@@ -227,6 +222,7 @@ main {
 
 /* Footer */
 footer {
+  width: 100%;
   background-color: var(--secondary-color);
   color: white;
   padding: 2em 1em;
@@ -242,6 +238,7 @@ footer {
   justify-content: center;
   gap: 2em;
   margin-top: 1em;
+  flex-wrap: wrap;
 }
 
 .footer-nav a {
