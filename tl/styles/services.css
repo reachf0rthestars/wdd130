@@ -140,3 +140,64 @@ h2 {
     width: 100%;
   }
 }
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  padding: 1em 0;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.subtitle {
+  font-size: 1em;
+  margin-top: 0.25em;
+  color: var(--accent2-color);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.footer-inner {
+  margin-bottom: 1em;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-plan-link {
+  margin-top: 1em;
+}
