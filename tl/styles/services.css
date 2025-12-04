@@ -21,7 +21,7 @@
   --nav-hover-background-color: var(--accent3-color);
 }
 
-/* Base */
+/* Base styles */
 body {
   margin: 0;
   font-size: 18px;
@@ -42,7 +42,7 @@ h2 {
 /* Header */
 header {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); /* dark green like Home page */
   color: var(--headline-color-on-color);
   padding: 1em 2em;
   display: flex;
@@ -60,20 +60,20 @@ header {
 }
 
 .branding img {
-  width: 80px;
-  height: 80px;
+  width: 96px;
+  height: 96px;
 }
 
 .site-title h1 {
   margin: 0;
   font-size: 2em;
-  color: var(--accent2-color);
+  color: var(--accent2-color); /* white text */
 }
 
 .subtitle {
   font-size: 1em;
   margin-top: 0.25em;
-  color: var(--accent3-color);
+  color: var(--accent3-color); /* orange accent */
 }
 
 /* Navigation */
@@ -96,7 +96,7 @@ nav {
   min-width: 120px;
   text-decoration: none;
   font-weight: bold;
-  color: var(--accent2-color);
+  color: var(--accent2-color); /* white links */
   transition: background-color 0.3s ease;
 }
 
@@ -204,7 +204,7 @@ nav {
 /* Footer */
 footer {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); /* dark green like Home page */
   color: white;
   padding: 2em 1em;
   text-align: center;
