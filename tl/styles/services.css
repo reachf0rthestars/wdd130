@@ -418,3 +418,15 @@ main {
     padding: 0 1em;
   }
 }
+.services-list {
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;   /* Ensures all child elements are centered */
+  max-width: 900px;     /* Optional: keeps content from stretching too wide */
+}
+
+.service-detail {
+  display: inline-block; /* Makes each service block align neatly in center */
+  text-align: center;    /* Keeps text inside each block centered */
+  margin: 2em auto;
+}
