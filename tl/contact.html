@@ -6,36 +6,6 @@
   <title>Titan Lawn Mowing — Contact</title>
   <link rel="stylesheet" href="styles/contact.css">
 </head>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector(".quote-form");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault(); // stop page reload
-
-    // Collect form values
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const details = document.getElementById("details").value.trim();
-
-    // Basic validation
-    if (!name || !email) {
-      alert("Please fill out your name and email.");
-      return;
-    }
-
-    // Simulate sending data (you could replace this with a real backend call)
-    console.log("Form submitted:", { name, email, phone, details });
-
-    // Show confirmation to the user
-    alert(`Thank you, ${name}! Your request has been received. We'll contact you soon.`);
-
-    // Reset the form
-    form.reset();
-  });
-});
-</script>
 <body>
   <header>
     <div class="branding">
@@ -62,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h2 id="contact-info-heading">Contact Us</h2>
       <p>Ready to book? Call, email, or use the form below to request a free estimate. We respond within 24 hours.</p>
 
-      <p><strong>Phone:</strong> (your-phone-number)</p>
+      <p><strong>Phone:</strong> 208-419-7521</p>
       <p><strong>Email:</strong> <a href="mailto:info@titanlawn.com">info@titanlawn.com</a></p>
       <p><strong>Service area:</strong> Idaho Falls and surrounding communities</p>
 
@@ -83,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <button type="submit">Send Request</button>
       </form>
 
-      <img src="images/contact.png" alt="Customer calling for service" width="420">
+      <img src="images/contact.png" alt="Customer calling for service" class="contact-image">
     </section>
   </main>
 
@@ -100,5 +70,29 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="site-plan.html">View site plan</a>
     </div>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".quote-form");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // stop page reload
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const details = document.getElementById("details").value.trim();
+
+      if (!name || !email) {
+        alert("Please fill out your name and email.");
+        return;
+      }
+
+      console.log("Form submitted:", { name, email, phone, details });
+      alert(`Thank you, ${name}! Your request has been received. We'll contact you soon.`);
+      form.reset();
+    });
+  });
+  </script>
 </body>
 </html>
