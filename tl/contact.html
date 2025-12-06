@@ -33,11 +33,13 @@
       <p>Ready to book? Call, email, or use the form below to request a free estimate. We respond within 24 hours.</p>
 
       <p><strong>Phone:</strong> 208-419-7521</p>
-      <p><strong>Email:</strong> <a href="mailto:info@titanlawn.com">info@titanlawn.com</a></p>
+      <p><strong>Email:</strong> <a href="mailto:angladdi@gmail.com">angladdi@gmail.com</a></p>
       <p><strong>Service area:</strong> Idaho Falls and surrounding communities</p>
+      <p><strong>Hours:</strong> Monday – Saturday, 8:00 AM – 6:00 PM</p>
 
       <h3>Request a Quote</h3>
-      <form action="#" method="post" class="quote-form" aria-label="Request a quote form">
+      <!-- Formspree integration -->
+      <form action="https://formspree.io/f/xzznvozz" method="POST" class="quote-form" aria-label="Request a quote form">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required>
 
@@ -70,29 +72,5 @@
       <a href="site-plan.html">View site plan</a>
     </div>
   </footer>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector(".quote-form");
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); // stop page reload
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const details = document.getElementById("details").value.trim();
-
-      if (!name || !email) {
-        alert("Please fill out your name and email.");
-        return;
-      }
-
-      console.log("Form submitted:", { name, email, phone, details });
-      alert(`Thank you, ${name}! Your request has been received. We'll contact you soon.`);
-      form.reset();
-    });
-  });
-  </script>
 </body>
 </html>
