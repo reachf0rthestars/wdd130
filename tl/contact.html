@@ -4,8 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Titan Lawn Mowing — Contact</title>
-  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".quote-form");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // stop page reload
+
+    // Collect form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    // Basic validation
+    if (!name || !email) {
+      alert("Please fill out your name and email.");
+      return;
+    }
+
+    // Simulate sending data (you could replace this with a real backend call)
+    console.log("Form submitted:", { name, email, phone, details });
+
+    // Show confirmation to the user
+    alert(`Thank you, ${name}! Your request has been received. We'll contact you soon.`);
+
+    // Reset the form
+    form.reset();
+  });
+});
+</script>
 <body>
   <header>
     <div class="branding">
